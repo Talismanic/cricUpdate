@@ -54,6 +54,7 @@ for(i=0; i<data.matches.length;i++)
     output.push({'match':mat});
     count++;
   }
+  
 
     }
 
@@ -67,7 +68,12 @@ if(count){
 }
 
 else
-var output={"remaks":"No match scheduled"};
+{
+    var rem={"remaks":"No match scheduled"};
+    res.json(rem);
+    return;
+
+}
 
 });
 
